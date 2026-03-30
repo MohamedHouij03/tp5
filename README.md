@@ -7,7 +7,7 @@ query GetAllTasks {
   }
 }
 
-![GetAllTasks Query](..\assets\image1.png)
+![GetAllTasks Query](./assets/image1.png)
 
 mutation AddNewTask {
   addTask(title: "Faire le TP5", description: "Terminer la configuration de GraphQL avec Express", completed: false) {
@@ -18,7 +18,7 @@ mutation AddNewTask {
   }
 }
 
-![AddNewTask Mutation](..\assets\image2.png)
+![AddNewTask Mutation](./assets/image2.png)
 
 mutation CompleteTask {
   completeTask(id: "1") {
@@ -29,4 +29,4 @@ mutation CompleteTask {
   }
 }
 
-![CompleteTask Mutation](..\assets\image3.png)
+![CompleteTask Mutation](./assets/image3.png)
