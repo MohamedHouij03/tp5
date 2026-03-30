@@ -1,0 +1,50 @@
+# GraphQL Queries and Mutations for Testing
+
+# Query to retrieve all tasks
+query GetAllTasks {
+  tasks {
+    id
+    title
+    description
+    completed
+    duration
+  }
+}
+
+# Mutation to add a new task
+mutation AddNewTask {
+  addTask(
+    title: "Example Task"
+    description: "This is an example task"
+    completed: false
+    duration: 60
+  ) {
+    id
+    title
+    description
+    completed
+    duration
+  }
+}
+
+# Mutation to mark a task as completed
+mutation MarkTaskCompleted {
+  completeTask(id: "1") {
+    id
+    title
+    completed
+  }
+}
+
+# Mutation to change task description
+mutation ChangeTaskDescription {
+  changeDescription(id: "1", description: "Updated task description") {
+    id
+    description
+  }
+}
+
+# Mutation to delete a task
+mutation DeleteTask {
+  deleteTask(id: "1")
+}
